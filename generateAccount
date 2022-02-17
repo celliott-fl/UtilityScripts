@@ -1,0 +1,23 @@
+#!/bin/sh
+# This is a comment!
+
+echo "Generate email address"
+
+
+curl 'https://www.uat2.origin.footlocker.com/apigate/v3/users' \
+-X POST \
+-H 'Accept: application/json' \
+-H 'Content-Type: application/json' \
+-H 'FLAKStg: 8034nfdan' \
+-H 'X-CSRF-TOKEN: ad947254-2f6c-41c5-95e6-8909f83e0c95' \
+-H 'newrelic: ewoiZCI6IHsKImFjIjogIjI2ODQxODkiLAoiYXAiOiAiODE4MTQxNjY2IiwKImlkIjogImFlZjA2YTY0ZWJhZTBmODIiLAoidGkiOiAxNjMxNTQ2MjM5Mzg1LAoidHIiOiAiN2ZjY2FkYjUyNzY1MTU0ZDkxN2ExNzc3MTBkMDczMjEiLAoidHkiOiAiTW9iaWxlIgp9LAoidiI6IFsKMCwKMgpdCn0=' \
+-H 'X-FLAPI-SESSION-ID: 1r105qk2m1domsdmbsd0nc8ae.fzcexflapiua618881' \
+-H 'tracestate: @nr=0-2-2684189-818141666-aef06a64ebae0f82--0--1631546239385' \
+-H 'X-NewRelic-ID: VgAPVVdbARAIVVlTAwABUFI=' \
+-H 'Host: www.uat2.origin.footlocker.com' \
+-H 'User-Agent: FootLocker/CFNetwork/Darwin' \
+-H 'X-API-KEY: SaXxXeI3C2kkXbW1TqRNk5MKYJLz20rr' \
+-H 'traceparent: 00-7fccadb52765154d917a177710d07321-aef06a64ebae0f82-00' \
+-H 'X-FLAPI-API-IDENTIFIER: 921B2b33cAfba5WWcb0bc32d5ix89c6b0f614' \
+--proxy http://localhost:9090 \
+-d '{"postalCode":"60610","g-recaptcha-response":"03AGdBq24uiETc15TbXYhfJPuVKSxTBGMfwm-wrDk618is-v754JuEdBDPeDNS3f0pw4oopzQk4uorrF3JNle3hS-JjrQ6zqpaYHedNwUcN8iNkgmEIWw1l5U8P7q9Q1SOY0qiL6bTwte43KSfpLGVJcBJwHG6qAaMwve9O8FwaPYIpAscZjL2j9LG1QQ2LwaXExidRRNDSqQkv0joQpWWCUtxhkAltzlMY9MjvOoR-Hua94SOTJ1giurdqtDk1ucGuLDm-9m9poC7bxCgIYRvSeZSZHpvz9nYgnBnoy3jIophsKWKZ_qv7tGuGp6kMFZIQFqRzLiCl7u_D01R7pfZ8cMxJ77fJhT6Y7ZY2twn1Qa0rc3sEjUvAg1nBFXZGuXKpq9brF-axUAlhxrHZKkeDAVq4rXTEegqL9Ct6Z4-yQ0p2Y7mNm8ujCblXFXMRy4RDfTzA_GWppMVZKcZhC2xzNFN1YH3tVGtEg","birthday":"01\/01\/2001","loyaltyFlxEmailOptIn":true,"preferredLanguage":"en","uid":"mad21156@yopmail.com","phoneNumber":"3216549878","loyaltyStatus":true,"flxTcVersion":"1.0","password":"Asdf1234!","bannerEmailOptIn":true,"lastName":"Lav","firstName":"Mint"}'
